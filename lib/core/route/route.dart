@@ -9,6 +9,7 @@ import 'package:JillaOne/view/screens/subscribe_plan/subscribe_plan_screen.dart'
 import 'package:JillaOne/view/screens/subscribe_plan/web_view/deposit_payment_webview.dart';
 import 'package:JillaOne/view/screens/watch_history/my_watch_history.dart';
 import 'package:JillaOne/view/screens/wish_list/wish_list_screen.dart';
+import 'package:JillaOne/view/screens/referal/referals_screen.dart';
 import '../../view/screens/about/privacy_screen.dart';
 import '../../view/screens/account/chagne_password/change_password.dart';
 import '../../view/screens/account/payment_log_screen/transaction_log_screen.dart';
@@ -69,6 +70,7 @@ class RouteHelper{
               static const String profileComplete='/profile-complete-screen';
               static const String changePasswordScreen='/change-password-screen';
               static const String subscribeScreen='/subscribe-screen';
+              static const String referralsScreen ='/referrals-screen';
               static const String depositScreen='/deposit-screen';
               static const String myWatchHistoryScreen='/history-screen';
               static const String paymentHistoryScreen='/payment-screen';
@@ -92,6 +94,7 @@ class RouteHelper{
           GetPage(name: wishListScreen, page: () =>   const WishListScreen()),
           GetPage(name: myWatchHistoryScreen, page: () =>   const MyWatchHistoryScreen()),
           GetPage(name: subscribeScreen, page: () =>  const SubscribePlanScreen()),
+          GetPage(name: referralsScreen, page: () =>  const Referrals()),
           GetPage(name: profileScreen, page: () =>  const ProfileScreen()),
           GetPage(name: profileComplete, page: () =>  const ProfileCompleteScreen()),
           GetPage(name: changePasswordScreen, page: () =>  const ChangePasswordScreen()),

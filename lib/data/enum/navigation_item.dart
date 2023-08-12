@@ -7,6 +7,7 @@
     about,
     wishList,
     subscribe,
+    referrals,
     language,
     logout,
     delete

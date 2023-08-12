@@ -93,6 +93,14 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
                           SizedBox(height: space),
                           buildMenuItem(
                             context,
+                            item: NavigationItem.referrals,
+                            text:MyStrings.referrals,
+                            index: 13,
+                            icon: Icons.share,
+                          ),
+                          SizedBox(height: space),
+                          buildMenuItem(
+                            context,
                             item: NavigationItem.history,
                             text:MyStrings.history,
                             index: 5,
@@ -225,6 +233,13 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
       bool isOk = isAuthorized();
       if (isOk) {
         Get.toNamed(RouteHelper.subscribeScreen);
+      } else {
+        showErrorSnackbar();
+      }
+    }else if (index == 13) {
+      bool isOk = isAuthorized();
+      if (isOk) {
+        Get.toNamed(RouteHelper.referralsScreen);
       } else {
         showErrorSnackbar();
       }

@@ -167,6 +167,7 @@ class MyStrings{
 
   static const String changePassword              = "Change Password";
   static const String subscribe                   = "Subscribe";
+  static const String referrals                   = "Referrals";
   static const String language                    = "Language";
   static const String logout                      = "Logout";
   static const String delete                      = "Delete Account";
